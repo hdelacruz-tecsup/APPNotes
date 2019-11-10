@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#55BF3D"
+        android:layout_marginTop="30dp">
+
+
+        <TextView
+            android:id="@+id/nota_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="165dp"
+            android:text="Titulo de Nota"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/nota_fecha"
+            android:layout_toEndOf="@+id/nota_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="20dp"
+            android:text="2019/10/05"
+            />
+
+        <TextView
+            android:id="@+id/nota_informacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_below="@+id/nota_titulo"
+            android:text="Aqui va toda la nota que escribe nuestro usuario a la hora de crear una nueva nota."/>
+
+
+        <Button
+            android:id="@+id/archivar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nota_informacion"
+            android:text="Favorito"
+            android:layout_alignParentEnd="true"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            />
+        <Button
+            android:id="@+id/favorito_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Archivar"
+            android:layout_toStartOf="@+id/archivar_button"
+            android:layout_below="@+id/nota_informacion"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+
+            />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
